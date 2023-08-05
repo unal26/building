@@ -1,0 +1,22 @@
+.person{
+    background-image: url(images/img2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    position: relative;
+   
+    &-content{
+        position: absolute;
+        margin-top: 200px;    
+    }
+
+    &-title{
+        font-size: 35px;
+    }
+
+    &-p{
+color: black;
+font-size: 20px;
+    }
+}

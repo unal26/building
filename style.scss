@@ -1,0 +1,91 @@
+@import 'navbar';
+@import 'header';
+@import 'person';
+@import 'project';
+@import 'footer';
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+
+
+
+
+.btn{
+    border: 2px solid gray;
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+    width: 100px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.btn:hover{
+    transform: scale(1.2);
+    transition: .2s ease;
+    cursor: pointer;
+        }
+
+
+
+
+.navbar i{
+    margin: 40px 20px;
+    cursor: pointer;
+}
+
+img:hover{
+border: 2px solid red;
+}
+
+.footer-title h1{
+    margin: 10px 10px;
+    text-align: center;
+    font-size: 35px;
+    border-bottom: 2px solid red;
+}
+
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+    .navbar {
+
+        padding: 0;
+        &-logo {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+        }
+        &-list {
+            flex-direction: column;
+            width: 100%;
+            height: 100vh;
+            justify-content: center;
+            
+           margin-top: -900px;
+            transition: all 0.5s ease;
+            li {
+                margin: 30px auto;
+                a {
+                    color: black;
+                }
+            }
+        }
+        &-i {
+            
+            display: block;
+        }
+    }
+    
+    
+}

@@ -1,0 +1,31 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+    &-logo{
+     font-size: 40px;
+     text-decoration: underline;
+    }
+
+    &-span{
+        color: red;
+        text-decoration: none;
+     }
+
+     &-list{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        align-items: center; 
+        list-style: none;  
+     }
+
+     &-link{
+        text-decoration: none;
+        color: black;
+     }    
+}
